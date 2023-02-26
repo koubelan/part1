@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" >
+        <img class="hamburger" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="logo hamburger">
+      </a>
+      <nav class="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="">Book Trip</a></li>
+          <li><a href="">Admin Login</a></li>
+        </ul>
+      </nav>
+      <aside>
+        <h5>Halifax Come and Kayak</h5>
+        <img class="paddle"
+          src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png"
+        />
+      </aside>
+    </header>
+    <main>
+      <article>
+        <div class="principale">
+        <h1 class="expirence">Come Expirence <br/>Canada</h1>
+         
+        </div>
+        <h1 class="upcoming"><u>Upcoming Adventures</u></h1>
+        <div class="lieu">
+          <h2>Halifax</h2>
+          <span> Date :2017-06-12 <br/>Duration: 4 days </span>
+          <h3>Summary</h3>
+          <p>
+            Si vous êtes à la recherche d'un endroit pour passer un week-end, le
+            lac Kearney est l'endroit idéal. Il y a plusieurs terrains de
+            camping autour du lac qui offrent une variété de services, notamment
+            des douches, des toilettes et des aires de pique-nique. Vous pouvez
+            également louer un chalet ou une cabane pour une expérience plus
+            luxueuse.
+          </p>
+        
+          <h2>Sydney</h2>
+          <span> Date :2017-05-10 <br/>Duration: 2 days </span>
+          <h3>Summary</h3>
+          <p>
+            Située sur l'île du Cap-Breton en Nouvelle-Écosse, est une
+            destination de choix pour les amateurs de plein air. L'île est
+            connue pour ses paysages spectaculaires, ses plages de sable blanc
+            et ses activités de plein air, notamment le canoë-kayak. L'une des
+            destinations les plus prisées pour les sorties en canoë-kayak est le
+            lac Bras d'Or.
+          </p>
+        </div>
+      </article>
+    </main>
+    <script>
+        const logo = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        logo.addEventListener('click', () => {
+        menu.classList.toggle('open');
+});
+
+    </script>
+  </body>
+</html>
