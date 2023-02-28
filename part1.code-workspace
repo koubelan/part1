@@ -2,10 +2,9 @@
   "folders": [
     {
       "path": "."
-    },
-    {
-      "path": "../../training/week1"
     }
   ],
-  "settings": {}
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "part1"
+  }
 }

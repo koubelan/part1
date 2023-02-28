@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <title>Home Page</title>
   </head>
   <body>
-    <header>
-      <a href="#" >
-        <img class="hamburger" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="logo hamburger">
-      </a>
-      <nav class="menu">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="">Book Trip</a></li>
-          <li><a href="">Admin Login</a></li>
-        </ul>
-      </nav>
-      <aside>
-        <h5>Halifax Come and Kayak</h5>
-        <img class="paddle"
-          src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png"
-        />
-      </aside>
-    </header>
+    <div class="container" >
+      <div class="hamburger">
+        <img id="hamburger" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" width="50px" height="50px">  
+        <nav class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Book Trip</li>
+            <li>Admin Login</li>
+          </ul>
+       </nav>
+      </div>
+      <div class="titre_bar">Halifax Come and Kayak</div>
+     <div class="paddle">
+      <img  src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png" width="50px" height="50px">  
+     </div>
+     
+    </div>
+      
     <main>
-      <article>
-        <div class="principale">
-        <h1 class="expirence">Come Expirence <br/>Canada</h1>
-         
+      
+        <div class="slide">
+            <img  src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg">
+            <div class="expirence">
+              Come Expirence <br/>Canada
+            </div>
         </div>
-        <h1 class="upcoming"><u>Upcoming Adventures</u></h1>
+        <article >
+        <div class="upcoming">Upcoming Adventures<hr></div>
         <div class="lieu">
           <h2>Halifax</h2>
           <span> Date :2017-06-12 <br/>Duration: 4 days </span>
@@ -61,14 +63,8 @@
         </div>
       </article>
     </main>
-    <script>
-        const logo = document.querySelector('.hamburger');
-        const menu = document.querySelector('.menu');
 
-        logo.addEventListener('click', () => {
-        menu.classList.toggle('open');
-});
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
