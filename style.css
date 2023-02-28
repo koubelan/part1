@@ -119,6 +119,7 @@ article p {
   margin-top: 0px;
 }
 
+/* Css lié spécifiquement à moins de 1200 px de l'argeur */
 @media (max-width: 1200px) {
   * {
     margin: 0;
@@ -174,10 +175,10 @@ article p {
 }
 
 }
-
+/* Css lié spécifiquement à moins de 800 px de l'argeur */
 @media (max-width: 800px) {
   body {
-    font-size: 70%;
+    font-size: 70%; 
   }
 
   .slide .expirence {
