@@ -8,6 +8,7 @@
 }
 
 .titre_bar {
+  
   padding-top: 30px;
   padding-left: 40%;
   color: white;
@@ -19,17 +20,20 @@ li {
 }
 
 .hamburger {
-  width: 50px;
-  height: 50px;
   padding: 15px; 
 }
 
 .paddle {
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  right: 100%;
+ position: fixed;
+ top: 5px;
+ right: 0;
+ padding: 15px;
+ z-index: 9999;
+ 
 }
+
+
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
