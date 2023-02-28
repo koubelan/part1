@@ -3,7 +3,6 @@
   flex-direction: row;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 7);
   background-color: rgba(42, 81, 150, 1);
-  /*position:fixed;*/
   width: 100vw;
   height: 80px;
 }
@@ -19,27 +18,17 @@ li {
   padding-top: 10px;
 }
 
-/*header aside h5 {
-  text-align: center;
-  margin-top: 10px;
-  font-weight:lighter;
-}*/
-
 .hamburger {
   width: 50px;
   height: 50px;
-  padding: 15px;
- 
-  
+  padding: 15px; 
 }
 
 .paddle {
-  position: fixed;
   width: 50px;
   height: 50px;
   padding: 15px;
-  right: 0%;
-  
+  right: 100%;
 }
 
 body {
@@ -66,17 +55,10 @@ body {
   left: 0px;
 }
 
-/* Afficher le menu lorsqu'il est ouvert */
-/*.menu.open {
-  display: block;
-}
-*/
+
 .slide {
   text-align: center;
   height: 500px;
-
-  
- 
 }
 
 .slide img {
@@ -87,9 +69,7 @@ body {
   position: relative;
   bottom: 350px;
   font-size: 50px;
-  color: rgb(255, 255, 255);
-  
-  
+  color: rgb(255, 255, 255); 
 }
 
 article{
@@ -109,7 +89,6 @@ article{
   width: 50%;
   margin-left: 2px;
   margin-top: 5px;
-
 }
 
 
@@ -141,97 +120,66 @@ article p {
     margin: 0;
   }
 
-  .bar {
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 1);
-    background-color: rgba(42, 81, 150, 1);
-    /*position:fixed;*/
-    width: 100vw;
-    height: 85px;
-  }
 
-  li {
-    list-style-type: none;
-    padding-top: 10px;
-  }
-
-  /*header aside h5 {
-  text-align: center;
-  margin-top: 10px;
-  font-weight:lighter;
-}*/
-
-  .hamburger {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-  }
-
-  .paddle {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-  }
-
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  /* Masquer le menu par défaut */
-  .menu {
-    width: 300px;
-    height: 100vh;
-    background-color: rgba(42, 81, 150, 1);
-    color: rgb(201, 217, 200);
-    font-family: "Gill Sans";
-    position: fixed;
-    left: -300px;
-    transition: all 1s;
-  }
-
-  .menu.active {
-    left: 0px;
-  }
-
-  /* Afficher le menu lorsqu'il est ouvert */
-  /*.menu.open {
-  display: block;
+.slide img {
+  width: 100vw;
+  height: 500px;
 }
-*/
-  .principale {
-    text-align: center;
-    color: white;
 
-    background-size: 100% auto;
-  }
 
-  .expirence {
-    padding-top: 280px;
-    font-size: 60px;
-  }
+article{ 
+  margin-left:2%;
+}
 
-  .upcoming {
-    font-size: 80px;
-    font-weight: bold;
-    text-underline-offset: 2;
-  }
+.upcoming {
+ 
+  margin-bottom: -35px;
+  font-size: 100px;
+  font-weight:bold;
+} 
 
-  .lieu {
-    margin-left: 10px;
-  }
+.upcoming hr{
 
-  .lieu h2 {
-    color: #426138;
-    font-weight: lighter;
-    text-decoration: underline;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
+  width: 100%;
+  margin-left: 2px;
+  margin-top: 5px;
+}
 
-  .lieu h3 {
-    padding-top: 12px;
-  }
+
+.lieu {
+  margin-left: 15px;
+  padding-top: 45px;
+}
+
+.lieu h2 {
+  color: #426138;
+  font-weight: lighter;
+  text-decoration: underline;
+  padding-top: 10px;
+  margin-bottom: 8px;
+  margin-top:-12px
+}
+
+.lieu h3 {
+  margin-bottom: 0px;
+  margin-top:8px
+}
+
+article p {
+  margin-top: 0px;
+}
+
 }
 
 @media (max-width: 800px) {
-  font-size: 100px;
+  body {
+    font-size: 70%;
+  }
+
+  .slide .expirence {
+    font-size: 30px; 
+  }
+  .upcoming{
+    font-size: 50px;
+  }
 }
